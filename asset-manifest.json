@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/food-store/static/css/main.82f1ad49.css",
-    "main.js": "/food-store/static/js/main.257c2c79.js",
+    "main.css": "/food-store/static/css/main.b800e297.css",
+    "main.js": "/food-store/static/js/main.0d621908.js",
     "static/media/burger.svg": "/food-store/static/media/burger.73777c1e784cf862ad3e3fd41e1cba17.svg",
     "static/media/free-icon-pizza-2362372.svg": "/food-store/static/media/free-icon-pizza-2362372.3740a26f525aa92950b5cda4706cf2de.svg",
     "static/media/free-icon-doughnut-2362260.svg": "/food-store/static/media/free-icon-doughnut-2362260.762fb4d8aa92f5f7c28468649f631350.svg",
@@ -12,13 +12,17 @@
     "static/media/free-icon-ketchup-2362341.svg": "/food-store/static/media/free-icon-ketchup-2362341.739b81a6ae07ffa2d14211d0013a059e.svg",
     "static/media/free-icon-cheeseburger-2362255.svg": "/food-store/static/media/free-icon-cheeseburger-2362255.b48a8df8918c27e87a935c8fdb59b904.svg",
     "static/media/free-icon-noodles-2362350.svg": "/food-store/static/media/free-icon-noodles-2362350.36ddb8e62ebb249a5e4bbfc65a63ef57.svg",
+    "static/media/logo (1).svg": "/food-store/static/media/logo (1).fd4a5587288c86a19b3c9b4afc8741ba.svg",
     "static/media/logo.svg": "/food-store/static/media/logo.8d1d69fa8e5564aef0088933b177c42c.svg",
+    "static/media/Vector (1).svg": "/food-store/static/media/Vector (1).f40e9cefc92ddfe0ae719a93102bf24c.svg",
+    "static/media/Vector.svg": "/food-store/static/media/Vector.13f1b46b1bb49a04b1252910f9ccce6a.svg",
     "index.html": "/food-store/index.html",
-    "main.82f1ad49.css.map": "/food-store/static/css/main.82f1ad49.css.map",
-    "main.257c2c79.js.map": "/food-store/static/js/main.257c2c79.js.map"
+    "static/media/еуд.svg": "/food-store/static/media/еуд.fcf04e385f7e91005e2600741a5ed38d.svg",
+    "main.b800e297.css.map": "/food-store/static/css/main.b800e297.css.map",
+    "main.0d621908.js.map": "/food-store/static/js/main.0d621908.js.map"
   },
   "entrypoints": [
-    "static/css/main.82f1ad49.css",
-    "static/js/main.257c2c79.js"
+    "static/css/main.b800e297.css",
+    "static/js/main.0d621908.js"
   ]
 }
