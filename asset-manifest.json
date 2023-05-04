@@ -1,7 +1,19 @@
 {
   "files": {
-    "main.css": "/food-store/static/css/main.b800e297.css",
-    "main.js": "/food-store/static/js/main.0d621908.js",
+    "main.css": "/food-store/static/css/main.54e6c6ef.css",
+    "main.js": "/food-store/static/js/main.60bf82d8.js",
+    "static/media/photoдомашний ход-дог.png": "/food-store/static/media/photoдомашний ход-дог.116d5c1844045e001dcf.png",
+    "static/media/photoклассический хот-дог.png": "/food-store/static/media/photoклассический хот-дог.4c2833bc7e966aa1e709.png",
+    "static/media/photoжгучий ъот.png": "/food-store/static/media/photoжгучий ъот.9334e413c8ccf3705405.png",
+    "static/media/мясная бомба.png": "/food-store/static/media/мясная бомба.e5d4bf2badea21922063.png",
+    "static/media/photoначос.png": "/food-store/static/media/photoначос.be12ac3fec6ed568f013.png",
+    "static/media/супер сырный.png": "/food-store/static/media/супер сырный.6ac651492c838afb57f0.png",
+    "static/media/Итальянский.png": "/food-store/static/media/Итальянский.30d50ec5b84442b129c6.png",
+    "static/media/Вечная классика.png": "/food-store/static/media/Вечная классика.6d000e08045eddc3e292.png",
+    "static/media/сытный.png": "/food-store/static/media/сытный.30f098cce1620aaf971a.png",
+    "static/media/photoкартошка фри.png": "/food-store/static/media/photoкартошка фри.3181c0be1bb0074b220f.png",
+    "static/media/тяжелый удар.png": "/food-store/static/media/тяжелый удар.a0fc489f6b28a2a5834b.png",
+    "static/media/photoлуоквые кольца.png": "/food-store/static/media/photoлуоквые кольца.52d0ba95e088d46bbae6.png",
     "static/media/burger.svg": "/food-store/static/media/burger.73777c1e784cf862ad3e3fd41e1cba17.svg",
     "static/media/free-icon-pizza-2362372.svg": "/food-store/static/media/free-icon-pizza-2362372.3740a26f525aa92950b5cda4706cf2de.svg",
     "static/media/free-icon-doughnut-2362260.svg": "/food-store/static/media/free-icon-doughnut-2362260.762fb4d8aa92f5f7c28468649f631350.svg",
@@ -18,11 +30,11 @@
     "static/media/Vector.svg": "/food-store/static/media/Vector.13f1b46b1bb49a04b1252910f9ccce6a.svg",
     "index.html": "/food-store/index.html",
     "static/media/еуд.svg": "/food-store/static/media/еуд.fcf04e385f7e91005e2600741a5ed38d.svg",
-    "main.b800e297.css.map": "/food-store/static/css/main.b800e297.css.map",
-    "main.0d621908.js.map": "/food-store/static/js/main.0d621908.js.map"
+    "main.54e6c6ef.css.map": "/food-store/static/css/main.54e6c6ef.css.map",
+    "main.60bf82d8.js.map": "/food-store/static/js/main.60bf82d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.b800e297.css",
-    "static/js/main.0d621908.js"
+    "static/css/main.54e6c6ef.css",
+    "static/js/main.60bf82d8.js"
   ]
 }
