@@ -2,8 +2,23 @@ import React from "react";
 import { Link } from "react-router-dom"
 
 function Categorie(props) {
+
+  const [isSelected, setIsSelected] = React.useState(false);
+
+  function handleClick() {
+    setIsSelected(!isSelected)
+  }
+
+
   return (
-    <Link className="food-categories__link" type="button"><img className="food-categories__icon" src={props.icon} />{props.title}</Link>
+    <Link
+      onClick={handleClick}
+      to={props.route}
+      className={`food-categories__link ${isSelected ? "food-categories__container_select" : ""}`}
+      type="button" >
+      <img className="food-categories__icon" src={props.icon} alt="иконки" />
+      {props.title}
+    </Link>
   )
 }
 

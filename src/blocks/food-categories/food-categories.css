@@ -13,6 +13,8 @@
   column-gap: 24px;
 }
 
+
+
 .food-categories__link {
   white-space: nowrap;
   background-color: #FFFFFF;
@@ -63,4 +65,8 @@
     padding-left: 10px;
     column-gap: 8px;
   }
+}
+
+.food-categories__container_select {
+  background-color: #FFAB08;
 }
