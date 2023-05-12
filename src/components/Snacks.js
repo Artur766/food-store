@@ -2,10 +2,10 @@ import React from "react";
 import { snack } from "../utils/constats";
 import Card from "./Card";
 
-function Snack() {
+function Snack(props) {
   return (
     <div>
-      <h2 className="cards__title">Закуски</h2>
+      <h2 className="cards__title">{props.title}</h2>
       <section className="cards">
         {snack.map((item, index) => (
           <Card

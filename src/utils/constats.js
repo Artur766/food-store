@@ -24,6 +24,24 @@ import spiceHotDog from '../images/photoжгучий ъот.png'
 import classicHotDog from '../images/photoклассический хот-дог.png'
 
 
+import burgerCombo from "../images/бургер комбо.jpg"
+import comboThree from "../images/Комбо на троих.jpg"
+import bigMac from "../images/Биг мак комбо.jpg"
+
+import peperoni from "../images/пеперони.jpg"
+import cezar from "../images/пицца цезарь.jpg"
+import italian from "../images/итальянскася пицца.jpg"
+
+import cheez from "../images/клубничный чизкейк.jpg"
+import pirojnoe from "../images/пирожное.jpg"
+import morojnoe from "../images/ягодное морожное.jpeg"
+
+import cheezs from "../images/сырный.jpg"
+import shashlick from "../images/шашлычный.jpeg"
+import tereyaki from "../images/терияки.jpg"
+
+
+
 export const buttonLinks = [
   {
     image: burgerImage,
@@ -140,5 +158,79 @@ export const hotDogs = [
     image: classicHotDog,
     price: "220₽",
     mass: "215г",
+  }
+]
+
+export const pizza = [
+  {
+    title: "Пеперони",
+    image: peperoni,
+    price: "550₽",
+    mass: "630г",
+  }, {
+    title: "Цезарь",
+    image: cezar,
+    price: "600₽",
+    mass: "700г",
+  }, {
+    title: "Итальянская",
+    image: italian,
+    price: "720₽",
+    mass: "800г",
+  }
+]
+
+export const deserts = [
+  {
+    title: "Чизкейк",
+    image: cheez,
+    price: "240₽",
+    mass: "190г",
+  }, {
+    title: "Шоколадное пирожное",
+    image: pirojnoe,
+    price: "190₽",
+    mass: "210г",
+  }, {
+    title: "Ягодное морожное",
+    image: morojnoe,
+    price: "250₽",
+    mass: "300г",
+  }
+]
+export const souse = [
+  {
+    title: "Сырный",
+    image: cheezs,
+    price: "70₽",
+    mass: "100г",
+  }, {
+    title: "Шашлычный",
+    image: shashlick,
+    price: "70₽",
+    mass: "100г",
+  }, {
+    title: "Терияки",
+    image: tereyaki,
+    price: "70₽",
+    mass: "100г",
+  }
+]
+export const combo = [
+  {
+    title: "Комбо бургер",
+    image: burgerCombo,
+    price: "450₽",
+    mass: "830г",
+  }, {
+    title: "Комбо на троих",
+    image: comboThree,
+    price: "1300₽",
+    mass: "2700г",
+  }, {
+    title: "Комбо с двойным бурегром",
+    image: bigMac,
+    price: "510₽",
+    mass: "1010г",
   }
 ]

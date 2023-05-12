@@ -1,15 +1,28 @@
 import React from "react";
 import Categorie from "./Categorie";
 import { buttonLinks } from "../utils/constats"
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import Burgers from "./Burgers";
 import Snack from "./Snacks";
 import HotDogs from "./HotDogs";
+import Combo from "./Combo";
+import Pizza from "./Pizza";
+import Desserts from "./Desserts";
+import Sauces from "./Sauces";
 
 
 function Main() {
 
+  const navigate = useNavigate();
 
+  const [isSelectedCategorie, setIsSelectedCategorie] = React.useState("Бургеры");
+  function handleSetIsSelected(categorie) {
+    setIsSelectedCategorie(categorie);
+  }
+
+  React.useEffect(() => {
+    navigate("/");
+  }, [])
 
   return (
     <main>
@@ -21,6 +34,8 @@ function Main() {
               title={item.title}
               key={index}
               route={item.path}
+              isSelected={isSelectedCategorie === item.title}
+              handleClick={() => { handleSetIsSelected(item.title) }}
             />
           ))}
         </div>
@@ -28,17 +43,16 @@ function Main() {
       <div className="container">
         <section className="basket"></section>
         <Routes>
-          <Route path="/" element={<Burgers />} />
-          <Route path="/snack" element={<Snack />} />
-          <Route path="/hot-dog" element={<HotDogs />} />
-          {/* <Route path="/combo" element={<Burgers />} />
-          <Route path="/shaurma" element={<Burgers />} />
-          <Route path="/pizza" element={<Burgers />} />
-          <Route path="/vok" element={<Burgers />} />
-          <Route path="/deserts" element={<Burgers />} />
-          <Route path="/sauces" element={<Burgers />} /> */}
+          <Route path="/" element={<Burgers title={"Бургеры"} />} />
+          <Route path="/snack" element={<Snack title={"Снэки"} />} />
+          <Route path="/hot-dog" element={<HotDogs title={"Хот-доги"} />} />
+          <Route path="/combo" element={<Combo title={"Комбо"} />} />
+          <Route path="/shaurma" element={<h2 className="cards__title">Скоро в меню!</h2>} />
+          <Route path="/pizza" element={<Pizza />} />
+          <Route path="/vok" element={<h2 className="cards__title">Скоро в меню!</h2>} />
+          <Route path="/deserts" element={<Desserts />} />
+          <Route path="/sauces" element={<Sauces />} />
         </Routes>
-
       </div>
     </main>
   )

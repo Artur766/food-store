@@ -2,10 +2,10 @@ import React from "react";
 import { burgers } from "../utils/constats";
 import Card from "./Card";
 
-function Burgers() {
+function Burgers(props) {
   return (
     <div>
-      <h2 className="cards__title">Бургеры</h2>
+      <h2 className="cards__title">{props.title}</h2>
       <section className="cards">
         {burgers.map((item, index) => (
           <Card

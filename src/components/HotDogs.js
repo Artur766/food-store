@@ -2,10 +2,10 @@ import React from "react";
 import { hotDogs } from "../utils/constats";
 import Card from "./Card";
 
-function HotDogs() {
+function HotDogs(props) {
   return (
     <div>
-      <h2 className="cards__title">Хот-доги</h2>
+      <h2 className="cards__title">{props.title}</h2>
       <section className="cards">
         {hotDogs.map((item, index) => (
           <Card
