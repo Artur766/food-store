@@ -1,7 +1,15 @@
 {
   "files": {
-    "main.css": "/food-store/static/css/main.54e6c6ef.css",
-    "main.js": "/food-store/static/js/main.60bf82d8.js",
+    "main.css": "/food-store/static/css/main.274a2926.css",
+    "main.js": "/food-store/static/js/main.a6ae8c50.js",
+    "static/media/пирожное.jpg": "/food-store/static/media/пирожное.f7e4a92c086e860b9862.jpg",
+    "static/media/итальянскася пицца.jpg": "/food-store/static/media/итальянскася пицца.5c2d799570bc0ce9a9b4.jpg",
+    "static/media/пицца цезарь.jpg": "/food-store/static/media/пицца цезарь.ad0645c7a6da4b8c7979.jpg",
+    "static/media/шашлычный.jpeg": "/food-store/static/media/шашлычный.e325562b49613a3104b8.jpeg",
+    "static/media/пеперони.jpg": "/food-store/static/media/пеперони.2bdf3f2cdf0b78b037cc.jpg",
+    "static/media/клубничный чизкейк.jpg": "/food-store/static/media/клубничный чизкейк.57efc67bc17fb920905d.jpg",
+    "static/media/ягодное морожное.jpeg": "/food-store/static/media/ягодное морожное.e00dd9d646d9202947cb.jpeg",
+    "static/media/сырный.jpg": "/food-store/static/media/сырный.f39a0caac0548d5a9b93.jpg",
     "static/media/photoдомашний ход-дог.png": "/food-store/static/media/photoдомашний ход-дог.116d5c1844045e001dcf.png",
     "static/media/photoклассический хот-дог.png": "/food-store/static/media/photoклассический хот-дог.4c2833bc7e966aa1e709.png",
     "static/media/photoжгучий ъот.png": "/food-store/static/media/photoжгучий ъот.9334e413c8ccf3705405.png",
@@ -13,9 +21,13 @@
     "static/media/сытный.png": "/food-store/static/media/сытный.30f098cce1620aaf971a.png",
     "static/media/photoкартошка фри.png": "/food-store/static/media/photoкартошка фри.3181c0be1bb0074b220f.png",
     "static/media/тяжелый удар.png": "/food-store/static/media/тяжелый удар.a0fc489f6b28a2a5834b.png",
+    "static/media/терияки.jpg": "/food-store/static/media/терияки.beaa30f9bc824bc71bee.jpg",
     "static/media/photoлуоквые кольца.png": "/food-store/static/media/photoлуоквые кольца.52d0ba95e088d46bbae6.png",
     "static/media/burger.svg": "/food-store/static/media/burger.73777c1e784cf862ad3e3fd41e1cba17.svg",
+    "static/media/бургер комбо.jpg": "/food-store/static/media/бургер комбо.8dc80521d73c399957d5.jpg",
+    "static/media/Биг мак комбо.jpg": "/food-store/static/media/Биг мак комбо.a23a9c8f43e3aa21f561.jpg",
     "static/media/free-icon-pizza-2362372.svg": "/food-store/static/media/free-icon-pizza-2362372.3740a26f525aa92950b5cda4706cf2de.svg",
+    "static/media/Комбо на троих.jpg": "/food-store/static/media/Комбо на троих.c4d22a5b3c1885a52be5.jpg",
     "static/media/free-icon-doughnut-2362260.svg": "/food-store/static/media/free-icon-doughnut-2362260.762fb4d8aa92f5f7c28468649f631350.svg",
     "static/media/free-icon-hotdog-sandwich-2362313.svg": "/food-store/static/media/free-icon-hotdog-sandwich-2362313.fc21bb9c3e9347a3c0939bde4f70c693.svg",
     "static/media/free-icon-burrito-2362225.svg": "/food-store/static/media/free-icon-burrito-2362225.b4a4a9c34cff8a01c3d00e8720e48ea4.svg",
@@ -30,11 +42,11 @@
     "static/media/Vector.svg": "/food-store/static/media/Vector.13f1b46b1bb49a04b1252910f9ccce6a.svg",
     "index.html": "/food-store/index.html",
     "static/media/еуд.svg": "/food-store/static/media/еуд.fcf04e385f7e91005e2600741a5ed38d.svg",
-    "main.54e6c6ef.css.map": "/food-store/static/css/main.54e6c6ef.css.map",
-    "main.60bf82d8.js.map": "/food-store/static/js/main.60bf82d8.js.map"
+    "main.274a2926.css.map": "/food-store/static/css/main.274a2926.css.map",
+    "main.a6ae8c50.js.map": "/food-store/static/js/main.a6ae8c50.js.map"
   },
   "entrypoints": [
-    "static/css/main.54e6c6ef.css",
-    "static/js/main.60bf82d8.js"
+    "static/css/main.274a2926.css",
+    "static/js/main.a6ae8c50.js"
   ]
 }
