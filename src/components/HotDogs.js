@@ -9,6 +9,7 @@ function HotDogs(props) {
       <section className="cards">
         {hotDogs.map((item, index) => (
           <Card
+            addOrder={props.addOrder}
             title={item.title}
             image={item.image}
             price={item.price}

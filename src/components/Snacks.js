@@ -9,6 +9,7 @@ function Snack(props) {
       <section className="cards">
         {snack.map((item, index) => (
           <Card
+            addOrder={props.addOrder}
             title={item.title}
             image={item.image}
             price={item.price}

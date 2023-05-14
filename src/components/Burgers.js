@@ -9,6 +9,7 @@ function Burgers(props) {
       <section className="cards">
         {burgers.map((item, index) => (
           <Card
+            addOrder={props.addOrder} s
             title={item.title}
             image={item.image}
             price={item.price}

@@ -9,6 +9,7 @@ function Desserts(props) {
       <section className="cards">
         {deserts.map((item, index) => (
           <Card
+            addOrder={props.addOrder}
             title={item.title}
             image={item.image}
             price={item.price}

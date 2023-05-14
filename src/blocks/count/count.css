@@ -1,0 +1,37 @@
+.count {
+  width: 84px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F2F2F3;
+}
+
+.count__minus {
+  width: 7px;
+  height: 22px;
+  border: 0;
+  background-color: transparent;
+  margin-left: 12px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.count__plus {
+  width: 10px;
+  height: 22px;
+  border: 0;
+  background-color: transparent;
+  margin-right: 12px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.count__input {
+  max-width: 19px;
+  padding: 0;
+  height: 22px;
+  border: 0;
+  background-color: transparent;
+}

@@ -9,6 +9,7 @@ function Combo(props) {
       <section className="cards">
         {combo.map((item, index) => (
           <Card
+            addOrder={props.addOrder}
             title={item.title}
             image={item.image}
             price={item.price}
