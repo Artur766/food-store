@@ -86,37 +86,37 @@ export const burgers = [
   {
     title: "Мясная бомба",
     image: myasnayaBomba,
-    price: "689₽",
+    price: 689,
     mass: "520г",
     id: "ыsdadsasda2314"
   }, {
     title: "Супер сырный",
     image: superSir,
-    price: "550₽",
+    price: 550,
     mass: "512г",
     id: "d3123edasda"
   }, {
     title: "Сытный",
     image: sytniyi,
-    price: "639₽",
+    price: 639,
     mass: "580г",
     id: "adsa2312312"
   }, {
     title: "Тяжелый удар",
     image: hardJab,
-    price: "480₽",
+    price: 480,
     mass: "470г",
     id: "qdsad213213"
   }, {
     title: "Вечная классика",
     image: vechnayaClassic,
-    price: "450₽",
+    price: 450,
     mass: "450г",
     id: "fqdssad213123"
   }, {
     title: "Итальянский",
     image: italiya,
-    price: "560₽",
+    price: 560,
     mass: "510г",
     id: "kfsqfjdj233"
   }
@@ -127,17 +127,17 @@ export const snack = [
   {
     title: "Начос",
     image: nachos,
-    price: "250₽",
+    price: 250,
     mass: "220г",
   }, {
     title: "Картошка фри",
     image: free,
-    price: "245₽",
+    price: 245,
     mass: "180г",
   }, {
     title: "Луковые кольца",
     image: luck,
-    price: "230₽",
+    price: 230,
     mass: "160г",
   }
 ]
@@ -146,17 +146,17 @@ export const hotDogs = [
   {
     title: "Домашний хот-дог",
     image: homeHotDog,
-    price: "290₽",
+    price: 290,
     mass: "250г",
   }, {
     title: "Жгучий хот-дог",
     image: spiceHotDog,
-    price: "239₽",
+    price: 239,
     mass: "245г",
   }, {
     title: "Классический хот-дог",
     image: classicHotDog,
-    price: "220₽",
+    price: 220,
     mass: "215г",
   }
 ]
@@ -165,17 +165,17 @@ export const pizza = [
   {
     title: "Пеперони",
     image: peperoni,
-    price: "550₽",
+    price: 550,
     mass: "630г",
   }, {
     title: "Цезарь",
     image: cezar,
-    price: "600₽",
+    price: 600,
     mass: "700г",
   }, {
     title: "Итальянская",
     image: italian,
-    price: "720₽",
+    price: 720,
     mass: "800г",
   }
 ]
@@ -184,17 +184,17 @@ export const deserts = [
   {
     title: "Чизкейк",
     image: cheez,
-    price: "240₽",
+    price: 240,
     mass: "190г",
   }, {
     title: "Шоколадное пирожное",
     image: pirojnoe,
-    price: "190₽",
+    price: 190,
     mass: "210г",
   }, {
     title: "Ягодное морожное",
     image: morojnoe,
-    price: "250₽",
+    price: 250,
     mass: "300г",
   }
 ]
@@ -202,17 +202,17 @@ export const souse = [
   {
     title: "Сырный",
     image: cheezs,
-    price: "70₽",
+    price: 70,
     mass: "100г",
   }, {
     title: "Шашлычный",
     image: shashlick,
-    price: "70₽",
+    price: 70,
     mass: "100г",
   }, {
     title: "Терияки",
     image: tereyaki,
-    price: "70₽",
+    price: 70,
     mass: "100г",
   }
 ]
@@ -220,17 +220,17 @@ export const combo = [
   {
     title: "Комбо бургер",
     image: burgerCombo,
-    price: "450₽",
+    price: 450,
     mass: "830г",
   }, {
     title: "Комбо на троих",
     image: comboThree,
-    price: "1300₽",
+    price: 1300,
     mass: "2700г",
   }, {
     title: "Комбо с двойным бурегром",
     image: bigMac,
-    price: "510₽",
+    price: 510,
     mass: "1010г",
   }
 ]

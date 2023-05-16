@@ -9,12 +9,12 @@ function Order(props) {
       <div className="order__wrapper">
         <h3 className="order__title">{props.title}</h3>
         <p className="order__gramm">{props.gramm}</p>
-        <p className="order__price">{props.price}</p>
+        <p className="order__price">{props.price}₽</p>
       </div>
       <div className="count">
-        <button type="button" className="count__minus">-</button>
-        <input className="count__input" />
-        <button type="button" className="count__plus">+</button>
+        <button type="button" className="count__minus" onClick={props.countMinus}>-</button>
+        <input className="count__input" value={props.value} onChange={props.handleChange} />
+        <button type="button" className="count__plus" onClick={props.countPLus}>+</button>
       </div>
     </div>
   )

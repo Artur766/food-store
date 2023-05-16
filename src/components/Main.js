@@ -16,10 +16,10 @@ import Order from "./Order";
 function Main() {
 
   const navigate = useNavigate();
-
+  const [totalPrice, setTotalPrice] = React.useState(0);
   const [isSelectedCategorie, setIsSelectedCategorie] = React.useState("Бургеры");
-  const [isOrder, setIsOrder] = React.useState([]);
-
+  const [isOrders, setIsOrder] = React.useState([]);
+  const [valueOrder, setValueOrder] = React.useState(1);
   function handleSetIsSelected(categorie) {
     setIsSelectedCategorie(categorie);
   }
@@ -28,8 +28,20 @@ function Main() {
     navigate("/");
   }, [])
 
-  function addOrder(as) {
-    setIsOrder([...as])
+  function addOrder(card) {
+    setIsOrder([card, ...isOrders]);
+    setTotalPrice(totalPrice + card.price);
+  }
+
+  function handleChange(e) {
+    setValueOrder(e.target.value);
+  }
+
+  function countPLus() {
+    setValueOrder(valueOrder + 1);
+  }
+  function countMinus() {
+    if (valueOrder > 1) setValueOrder(valueOrder - 1);
   }
 
   return (
@@ -52,29 +64,33 @@ function Main() {
         <section className="basket">
           <div className="basket__header">
             <h3 className="basket__title">Корзина</h3>
-            <div className="basket__number-orders">4</div>
+            <div className="basket__number-orders">{isOrders.length}</div>
           </div>
           <div className="orders">
             {
-              isOrder.map((item, index) => (
+              isOrders.map((item, index) => (
                 <Order
-                  key={index}
+                  key={item.id}
                   title={item.title}
                   price={item.price}
                   image={item.image}
-                  gramm={item.gramm}
+                  gramm={item.mass}
+                  value={valueOrder}
+                  handleChange={handleChange}
+                  countPLus={countPLus}
+                  countMinus={countMinus}
                 />
               ))
             }
           </div>
           <div className="basket__total">
             <p className="basket__text">Итого</p>
-            <p className="backet__total-price">1279₽</p>
+            <p className="backet__total-price">{totalPrice}</p>
           </div>
           <button type="submit" className="basket__btn">Оформить заказ</button>
           <div className="basket__delivery">
             <img className="basket__svg" src={moto} alt="мопед" />
-            <p className="basket__delivery-text">Бесплатная доставка</p>
+            <p className="basket__delivery-text">{totalPrice >= 599 ? "Бесплатная доставка" : "Бесплатная доставка от 599"}</p>
           </div>
         </section>
         <Routes>
