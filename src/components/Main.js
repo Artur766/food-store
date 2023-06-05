@@ -18,8 +18,9 @@ function Main() {
   const navigate = useNavigate();
   const [totalPrice, setTotalPrice] = React.useState(0);
   const [isSelectedCategorie, setIsSelectedCategorie] = React.useState("Бургеры");
-  const [isOrders, setIsOrder] = React.useState([]);
-  const [valueOrder, setValueOrder] = React.useState(1);
+  const [isOrders, setIsOrders] = React.useState([]);
+  const [priceOrder, setPriceOrder] = React.useState(0);
+
   function handleSetIsSelected(categorie) {
     setIsSelectedCategorie(categorie);
   }
@@ -29,19 +30,21 @@ function Main() {
   }, [])
 
   function addOrder(card) {
-    setIsOrder([card, ...isOrders]);
+    const index = isOrders.findIndex(order => order.title === card.title);
+    if (index === -1) {
+      setIsOrders([...isOrders, { ...card, quantity: 1 }]);
+    } else {
+      const updatedOrders = [...isOrders];
+      updatedOrders[index].quantity += 1;
+      setIsOrders(updatedOrders);
+      console.log(card.quantity)
+    }
+
     setTotalPrice(totalPrice + card.price);
   }
 
-  function handleChange(e) {
-    setValueOrder(e.target.value);
-  }
-
-  function countPLus() {
-    setValueOrder(valueOrder + 1);
-  }
-  function countMinus() {
-    if (valueOrder > 1) setValueOrder(valueOrder - 1);
+  function handleOrderValues(price) {
+    setPriceOrder(totalPrice + price);
   }
 
   return (
@@ -70,22 +73,20 @@ function Main() {
             {
               isOrders.map((item, index) => (
                 <Order
-                  key={item.id}
+                  key={index}
                   title={item.title}
                   price={item.price}
                   image={item.image}
                   gramm={item.mass}
-                  value={valueOrder}
-                  handleChange={handleChange}
-                  countPLus={countPLus}
-                  countMinus={countMinus}
+                  handleOrderValues={handleOrderValues}
+                  quantity={item.quantity}
                 />
               ))
             }
           </div>
           <div className="basket__total">
             <p className="basket__text">Итого</p>
-            <p className="backet__total-price">{totalPrice}</p>
+            <p className="backet__total-price">{totalPrice}₽</p>
           </div>
           <button type="submit" className="basket__btn">Оформить заказ</button>
           <div className="basket__delivery">
