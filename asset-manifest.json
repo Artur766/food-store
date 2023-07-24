@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/food-store/static/css/main.3d76f34e.css",
-    "main.js": "/food-store/static/js/main.39121907.js",
+    "main.css": "/food-store/static/css/main.cbfb979f.css",
+    "main.js": "/food-store/static/js/main.6e1ee1ee.js",
     "static/media/пирожное.jpg": "/food-store/static/media/пирожное.f7e4a92c086e860b9862.jpg",
     "static/media/итальянскася пицца.jpg": "/food-store/static/media/итальянскася пицца.5c2d799570bc0ce9a9b4.jpg",
     "static/media/пицца цезарь.jpg": "/food-store/static/media/пицца цезарь.ad0645c7a6da4b8c7979.jpg",
@@ -43,11 +43,11 @@
     "static/media/Vector.svg": "/food-store/static/media/Vector.13f1b46b1bb49a04b1252910f9ccce6a.svg",
     "index.html": "/food-store/index.html",
     "static/media/еуд.svg": "/food-store/static/media/еуд.fcf04e385f7e91005e2600741a5ed38d.svg",
-    "main.3d76f34e.css.map": "/food-store/static/css/main.3d76f34e.css.map",
-    "main.39121907.js.map": "/food-store/static/js/main.39121907.js.map"
+    "main.cbfb979f.css.map": "/food-store/static/css/main.cbfb979f.css.map",
+    "main.6e1ee1ee.js.map": "/food-store/static/js/main.6e1ee1ee.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d76f34e.css",
-    "static/js/main.39121907.js"
+    "static/css/main.cbfb979f.css",
+    "static/js/main.6e1ee1ee.js"
   ]
 }
