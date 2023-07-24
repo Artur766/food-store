@@ -1,2 +1,3 @@
 # Getting Started with Create React App
-* [Ссылка на страничку:  ](https://artur766.github.io/food-store/)
+* [Ссылка на страничку:  ](https://artur766.github.io/food-store/);
+Проект находится в разработке 
