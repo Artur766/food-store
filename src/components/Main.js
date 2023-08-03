@@ -13,7 +13,7 @@ import Basket from "./Basket";
 
 
 
-function Main() {
+function Main({ handleOpenPopup }) {
 
   const navigate = useNavigate();
   const [isSelectedCategorie, setIsSelectedCategorie] = React.useState("Бургеры");
@@ -78,13 +78,16 @@ function Main() {
         </div>
       </section>
       <div className="container">
-        <Basket
-          removeOrder={removeOrder}
-          isOrders={isOrders}
-          totalPrice={totalPrice}
-          quantityOrders={quantityOrders}
-          handleQuantityChange={handleQuantityChange}
-        />
+        <div className="container__basket">
+          <Basket
+            removeOrder={removeOrder}
+            isOrders={isOrders}
+            totalPrice={totalPrice}
+            quantityOrders={quantityOrders}
+            handleQuantityChange={handleQuantityChange}
+            handleOpenPopup={handleOpenPopup}
+          />
+        </div>
         <Routes>
           <Route path="/" element={<Burgers addOrder={addOrder} title={"Бургеры"} />} />
           <Route path="/snack" element={<Snack addOrder={addOrder} title={"Снэки"} />} />

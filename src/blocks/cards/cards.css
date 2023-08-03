@@ -80,7 +80,7 @@
   }
 }
 
-@media screen and (max-width:880px) {
+@media screen and (max-width:1000px) {
   .cards__title {
     font-size: 28px;
     line-height: 34px;

@@ -2,7 +2,7 @@ import React from 'react'
 import moto from "../images/мопед.svg"
 import Order from "./Order";
 
-export default function Basket({ isOrders, totalPrice, quantityOrders, handleQuantityChange, removeOrder }) {
+export default function Basket({ isOrders, totalPrice, quantityOrders, handleQuantityChange, removeOrder, handleOpenPopup }) {
 
   return (
     <section className="basket">
@@ -30,7 +30,7 @@ export default function Basket({ isOrders, totalPrice, quantityOrders, handleQua
         <p className="basket__text">Итого</p>
         <p className="backet__total-price">{totalPrice}₽</p>
       </div>
-      <button type="submit" className="basket__btn">Оформить заказ</button>
+      <button disabled={!quantityOrders ? true : false} type="submit" className={quantityOrders ? "basket__btn" : "basket__btn basket__btn_disabled"} onClick={handleOpenPopup}>Оформить заказ</button>
       <div className="basket__delivery">
         <img className="basket__svg" src={moto} alt="мопед" />
         <p className="basket__delivery-text">{totalPrice >= 599 ? "Бесплатная доставка" : "Бесплатная доставка от 599"}</p>
