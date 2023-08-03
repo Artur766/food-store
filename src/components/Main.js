@@ -19,15 +19,7 @@ function Main() {
   const [isSelectedCategorie, setIsSelectedCategorie] = React.useState("Бургеры");
   const [isOrders, setIsOrders] = React.useState([]);
   const [totalPrice, setTotalPrice] = React.useState(0);
-
-  function handlePriceChange(newPrice) {
-    setTotalPrice(newPrice);
-  }
-
-  function onIncrement(newPrice) {
-    setTotalPrice(newPrice)
-  }
-
+  const [quantityOrders, setQuantityOrders] = React.useState(0);
 
   function handleSetIsSelected(categorie) {
     setIsSelectedCategorie(categorie);
@@ -38,26 +30,36 @@ function Main() {
   }, [])
 
   React.useEffect(() => {
-    isOrders.forEach(item => setTotalPrice(item.price + totalPrice))
-  }, [isOrders.price])
+    setQuantityOrders(isOrders.reduce((acc, order) => acc + order.quantity, 0));
+    const newTotalPrice = isOrders.reduce((acc, order) => acc + order.price * order.quantity, 0);
+    setTotalPrice(newTotalPrice);
+  }, [isOrders])
 
   function addOrder(card) {
     const index = isOrders.findIndex(order => order.title === card.title);
     if (index === -1) {
       setIsOrders([...isOrders, { ...card, quantity: 1 }]);
+
     } else {
       const updatedOrders = [...isOrders];
       updatedOrders[index].quantity += 1;
       setIsOrders(updatedOrders);
     }
-
-    setTotalPrice(totalPrice + card.price);
   }
 
-  // function removeOrder() {
-  //   setIsOrders(isOrders.filter(order => order.quantity !== 0));
-  // }
+  function handleQuantityChange(updatedOrder) {
+    const updatedOrders = isOrders.map(order => {
+      if (order.title === updatedOrder.title) {
+        return updatedOrder;
+      }
+      return order;
+    });
+    setIsOrders(updatedOrders);
+  }
 
+  function removeOrder() {
+    setIsOrders(isOrders.filter(item => item.quantity !== 0));
+  }
 
   return (
     <main>
@@ -77,10 +79,11 @@ function Main() {
       </section>
       <div className="container">
         <Basket
+          removeOrder={removeOrder}
           isOrders={isOrders}
-          handlePriceChange={handlePriceChange}
-          onIncrement={onIncrement}
           totalPrice={totalPrice}
+          quantityOrders={quantityOrders}
+          handleQuantityChange={handleQuantityChange}
         />
         <Routes>
           <Route path="/" element={<Burgers addOrder={addOrder} title={"Бургеры"} />} />

@@ -1,22 +1,25 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 function Order(props) {
-  const [value, setValue] = React.useState(1);
+  const [quantity, setQuantity] = React.useState(props.quantity);
 
-  function handleChange(e) {
-    setValue(e.target.value);
-    props.onChangePrice(e.target.value * props.price);
+  function handlePlus() {
+    setQuantity(quantity + 1);
+    props.onQuantityChange({
+      ...props,
+      quantity: quantity + 1
+    })
   }
 
-  function handleIncrement() {
-    setValue(value + 1);
-    // props.onIncrement(value * props.price);
-  }
+  function handleMinus() {
+    setQuantity(quantity - 1);
 
-  function handleDecrement() {
-    if (value > 1) {
-      setValue(value - 1);
-    }
+    props.onQuantityChange({
+      ...props,
+      quantity: quantity - 1
+    })
+
+    props.removeOrder();
   }
 
   return (
@@ -24,13 +27,13 @@ function Order(props) {
       <img className="order__image" src={props.image} alt="заказ" />
       <div className="order__wrapper">
         <h3 className="order__title">{props.title}</h3>
-        <p className="order__gramm">{props.gramm}</p>
-        <p className="order__price">{props.price * value}₽</p>
+        <p className="order__gramm">{props.mass}</p>
+        <p className="order__price">{props.price * props.quantity}₽</p>
       </div>
       <div className="count">
-        <button type="button" className="count__minus" onClick={handleDecrement}  >-</button>
-        <input className="count__input" value={value} onChange={handleChange} />
-        <button type="button" className="count__plus" onClick={handleIncrement} >+</button>
+        <button type="button" className="count__minus" onClick={handleMinus}>-</button>
+        <div className="count__input">{quantity}</div>
+        <button type="button" className="count__plus" onClick={handlePlus} >+</button>
       </div>
     </div>
   )

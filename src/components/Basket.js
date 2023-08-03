@@ -2,15 +2,13 @@ import React from 'react'
 import moto from "../images/мопед.svg"
 import Order from "./Order";
 
-export default function Basket({ isOrders, handlePriceChange, onIncrement, totalPrice }) {
-
-
+export default function Basket({ isOrders, totalPrice, quantityOrders, handleQuantityChange, removeOrder }) {
 
   return (
     <section className="basket">
       <div className="basket__header">
         <h3 className="basket__title">Корзина</h3>
-        <div className="basket__number-orders">{isOrders.length}</div>
+        <div className="basket__number-orders">{quantityOrders}</div>
       </div>
       <div className="orders">
         {
@@ -20,9 +18,10 @@ export default function Basket({ isOrders, handlePriceChange, onIncrement, total
               title={item.title}
               price={item.price}
               image={item.image}
-              gramm={item.mass}
-              onChangePrice={handlePriceChange}
-              onIncrement={onIncrement}
+              mass={item.mass}
+              quantity={item.quantity}
+              onQuantityChange={handleQuantityChange}
+              removeOrder={removeOrder}
             />
           ))
         }
