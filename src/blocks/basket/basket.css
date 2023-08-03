@@ -71,13 +71,21 @@
   height: 24px;
   object-fit: cover;
   margin-right: 8px;
-  padding-bottom: 24px;
+
 }
 
 .basket__delivery {
   display: flex;
+  align-items: center;
+  padding-bottom: 24px;
+
+  max-width: 268px;
+}
+
+.basket__container-delivery {
+  display: flex;
+  align-items: center;
   margin: 0 auto;
-  width: 268px;
 }
 
 .basket__delivery-text {
@@ -99,9 +107,39 @@
   background-color: transparent;
 }
 
+
+.basket__roll-up {
+  color: #B1B1B1;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.basket__roll-up:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+
+
 @media screen and (max-width:1000px) {
   .basket {
     margin: 0;
     margin-bottom: 30px;
+    position: absolute;
+    top: 0px;
+  }
+
+  .basket__header {
+    cursor: pointer;
+  }
+
+  .basket__container {
+    display: none;
+  }
+
+  .basket__container_visable {
+    display: block;
   }
 }

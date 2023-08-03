@@ -148,7 +148,8 @@
 
 @media screen and (max-width:475px) {
   .cards {
-    max-width: 310px;
+    max-width: 300px;
+    gap: 10px 10px;
   }
 
   .cards__title {
@@ -157,11 +158,6 @@
 }
 
 @media screen and (max-width:320px) {
-
-  .cards {
-    max-width: 300px;
-    gap: 10px 10px;
-  }
 
   .card {
     width: 145px;

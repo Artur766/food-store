@@ -42,8 +42,13 @@ function PopupWithForm({ isOpen, handleClose }) {
     }
   }, [isOpen, handleClose]);
 
+  function handleSubmit(e) {
+    e.preventDefault();
+    handleClose();
+  }
+
   return (
-    <div onMouseDown={handleOverlayClose} className={`popup ${isOpen && "popup_opened"}`}>
+    <div onMouseDown={handleOverlayClose} className={`popup ${isOpen && "popup_opened"}`} onSubmit={handleSubmit}>
       <div className='popup__container'>
         <button className='popup__close-btn' type='button' onClick={handleClose} />
         <div className='popup__container-image'>
