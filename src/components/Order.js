@@ -15,7 +15,7 @@ function Order(props) {
 
     props.onQuantityChange({
       ...props,
-      quantity: props.quantity + 1,
+      quantity: props.quantity - 1,
     })
     if (quantity === 0) {
       props.removeOrder(props);
