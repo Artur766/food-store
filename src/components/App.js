@@ -9,8 +9,6 @@ function App() {
 
   const meal = useSelector(state => state.meal.meal);
 
-  console.log(meal)
-
   const [isOpen, setIsOpen] = React.useState(false)
 
   function handlePopup() {

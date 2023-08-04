@@ -39,7 +39,6 @@ function Main({ handleOpenPopup }) {
     const index = isOrders.findIndex(order => order.title === card.title);
     if (index === -1) {
       setIsOrders([...isOrders, { ...card, quantity: 1 }]);
-
     } else {
       const updatedOrders = [...isOrders];
       updatedOrders[index].quantity += 1;
@@ -56,10 +55,13 @@ function Main({ handleOpenPopup }) {
     });
     setIsOrders(updatedOrders);
   }
-
   function removeOrder() {
     setIsOrders(isOrders.filter(item => item.quantity !== 0));
   }
+  React.useEffect(() => {
+    removeOrder();
+  }, [totalPrice])
+
 
   return (
     <main>

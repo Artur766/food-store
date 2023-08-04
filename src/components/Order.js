@@ -4,10 +4,9 @@ function Order(props) {
   const [quantity, setQuantity] = React.useState(props.quantity);
 
   function handlePlus() {
-    setQuantity(quantity + 1);
     props.onQuantityChange({
       ...props,
-      quantity: quantity + 1
+      quantity: props.quantity + 1,
     })
   }
 
@@ -16,10 +15,11 @@ function Order(props) {
 
     props.onQuantityChange({
       ...props,
-      quantity: quantity - 1
+      quantity: props.quantity + 1,
     })
-
-    props.removeOrder();
+    if (quantity === 0) {
+      props.removeOrder(props);
+    }
   }
 
   return (
@@ -32,7 +32,7 @@ function Order(props) {
       </div>
       <div className="count">
         <button type="button" className="count__minus" onClick={handleMinus}>-</button>
-        <div className="count__input">{quantity}</div>
+        <div className="count__input">{props.quantity}</div>
         <button type="button" className="count__plus" onClick={handlePlus} >+</button>
       </div>
     </div>
