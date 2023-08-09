@@ -7,7 +7,6 @@ import React from 'react'
 
 function App() {
 
-  const meal = useSelector(state => state.meal.meal);
 
   const [isOpen, setIsOpen] = React.useState(false)
 
