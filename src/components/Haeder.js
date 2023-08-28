@@ -9,7 +9,7 @@ function Header() {
       <div className="header__wrapper">
         <img className="header__burger" src={burger} alt="бургер"></img>
         <div className="header__text">
-          <h1 className="header__title">Только самые <span className="header__span">сочные бургеры!</span></h1>
+          <h1 className="header__title">Только самые <span className="header__span">Сочные бургеры!</span></h1>
           <p className="header__subtitle">Бесплатная доставка от 599₽</p>
         </div>
       </div>
